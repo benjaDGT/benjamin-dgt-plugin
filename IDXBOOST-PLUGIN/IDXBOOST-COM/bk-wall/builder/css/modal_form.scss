@@ -1,0 +1,131 @@
+.active_modal{
+	.modal_form_contact{
+		z-index: 32;
+		visibility: visible;
+		.inner_modal{
+			top: 0;
+			opacity: 1;
+
+		}
+	}	
+}
+
+.modal_form_contact{
+	background: rgba(0,0,0,.8);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left: 0;
+	display:  flex;
+	justify-content: center;
+	align-items: center;
+	z-index: -1;
+	visibility: hidden;
+	.inner_modal{
+		max-width: 600px;
+		padding: 15px 8px;
+		background: #fff;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		top: -200px;
+		opacity: 0;
+		transition: all .3s ease;
+		@media (min-width: 768px){
+			padding: 20px 30px;
+		}
+	}
+	.head_modal{
+		margin-bottom: 18px;
+		text-align: center;
+		h2{
+			text-transform: uppercase;
+			color: #000;
+			font-size: 20px;
+			
+			font-weight: bold;
+			
+			margin:0;
+			margin-bottom: 10px;
+			@media (min-width: 768px){
+				font-size: 28px;	
+			}
+		}
+		p{
+			font-size: 12px;
+			line-height: 20px;
+			color: #000;
+			margin: 0;
+			@media (min-width: 768px){
+				font-size: 14px;	
+			}
+		}
+	}
+	.form-search{
+		>h3{
+			display: none;
+		}
+		.flex-content-form {
+			display: flex;
+			flex-wrap: wrap;
+			.form-item {
+				.medium{
+					border: 1px solid #929292;
+				}
+				textarea{
+					font-family: "Open Sans", sans-serif !important;
+				}
+				.clidxboost-btn-link{
+					margin-top:0;
+					margin-bottom: 0;
+					&:hover{
+						span {
+						    border-color: #333;
+						}
+					}
+				}
+			}
+			
+			li{
+				width: 50%;
+				padding: 0 8px;	
+				margin-bottom: 12px;
+				&.full-item{
+					width: 100%;
+				}
+				&:nth-child(6){
+					display: none;
+				}
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+			
+		}
+	}
+}
+
+.close_modal{
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	position: absolute;
+	top: 10px;
+	cursor: pointer;
+	right: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 17px;
+	color: #fff;
+	background: #000;
+	transition: all .3s ease;
+	border:2px solid #929292;
+	&:hover{
+		background: #fff;
+		color: #000;
+		border:2px solid #000;
+	}
+}
