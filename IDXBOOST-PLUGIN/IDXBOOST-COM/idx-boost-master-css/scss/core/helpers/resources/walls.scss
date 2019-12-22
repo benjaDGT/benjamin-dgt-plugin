@@ -1,0 +1,298 @@
+/*----------------------------------------------------------------------------------*/
+/* Walls @media screen and (min-width: 768px){
+/*----------------------------------------------------------------------------------*/
+.ms-profile-menu{
+  .ms-btn-back{
+    text-indent: -999999px;
+    position: relative;
+    span{
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-indent: 0;
+    }
+  }
+
+  .ms-profile-list{
+    .ms-item{
+      &.ms-item-wall{
+        &:hover{
+          .ms-wrap-img{
+            img{
+              transform: none;
+            }
+          }
+        }
+
+        .ms-wrap-img{
+          &:hover{
+            img{
+              transform: scale3d(1.1, 1.1, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ms-wrap-items{
+  .ms-item-wall{
+    flex-wrap: wrap;
+    border-top: 1px solid #cccccc;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    .ms-wrap-item{
+      width: 100%;
+      .ms-wrap-img{
+        display: block;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+        position: relative;
+        height: auto;
+        overflow: hidden;
+        &:after{
+          content: "";
+          padding-bottom: 56.25%;
+          display: block;
+        }
+        img{
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+
+      .ms-property-detail{
+        width: 100%;
+        .ms-label{
+          font-size: 12px;
+          display: block;
+          margin: 10px 0;
+          font-weight: 600;
+        }
+
+        .ms-title{
+          font-size: 17px;
+        }
+
+        .ms-price,
+        .ms-details,
+        .ms-address {
+          font-size: 15px;
+        }
+      }
+
+      .ms-wrap-btn{
+        display: flex;
+        justify-content: space-between;
+        .ms-btn{
+          height: 35px;
+          min-width: auto;
+          width: 32%;
+          text-transform: none;
+          border-radius: 4px;
+          border: 1px solid #E5E5E5;
+          background: linear-gradient(#ffffff, #f3f3f3);
+          border: 1px solid #E5E5E5;
+          color: #333;
+
+          &.ms-like{
+            &.active{
+              border-color: #8ebe2a;
+              background: #8ebe2a;
+              color: #FFF;
+            }
+          }
+
+          &.ms-nts{
+            &.active{
+              border-color: #000;
+              background: #000;
+              color: #FFF;
+            }
+          }
+        }
+      }
+    }
+
+    .ms-label-title{
+      font-size: 12px;
+      padding: 8px 15px;
+      background-color: #000000;
+      color: #fff;
+      font-weight: 600;
+      position: relative;
+      z-index: 2;
+    }
+
+    .ms-separate{
+      padding: 15px 0;
+      width: 100%;
+      position: relative;
+      order: -1;
+      &:before{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #ccc;
+        top: 50%;
+        margin-top: 0;
+        position: absolute;
+        left: 0;
+      }
+      /*border-top: 1px solid #ccc;
+      padding: 15px 0;*/
+    }
+
+    p{
+      font-size: 15px;
+      display: block;
+      margin: 10px 0;
+    }
+
+    &.ms-not-sure{
+      .ms-wrap-item{
+        img{
+          filter: grayscale(100%);
+        }
+      }
+
+      .ms-property-detail{
+        .ms-title{
+          color: #3f3f3f;
+        }
+        .ms-address{
+          color: #c9c9c9;
+        }
+        .ms-details,
+        .ms-price{
+          color: #a8a8a8;
+        }
+        .ms-label{
+          color: #afafaf;
+        }
+      }
+
+      p{
+        color: #a9a9a9;
+      }
+    }
+  }
+}
+
+.ms-header-walls{
+  padding: 20px 20px 13px 20px;
+  .ms-wall-title{
+    font-size: 27px;
+    font-weight: bold;
+    position: relative;
+    padding-left: 45px;
+    &:before{
+      content: "";
+      background-image: url('../images/corazon.png');
+      background-repeat: no-repeat;
+      display: block;
+      width: 35px;
+      height: 35px;
+      display: block;
+      background-position: 0 -66px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 991px){
+  .ms-profile-menu{
+    width: 820px;
+    padding-left: 440px;
+    &:after{
+      content: "";
+      display: block;
+      height: 100%;
+      width: 1px;
+      background-color: #dfe0e0;
+      position: absolute;
+      top: 0;
+      left: 440px;
+    }
+
+    .ms-header-tab{
+      .ms-tab-wall{
+        display: none !important;
+      }
+    }
+
+    #ms-body-walls{
+      position: absolute;
+      left: -440px;
+      width: 440px;
+      top: -210px;
+      height: 100vh;
+
+      .ms-body-tab{
+        height: calc(100vh - 70px);
+        padding: 0 20px;
+        width: 100%;
+        .ms-wrap-items{
+          padding-bottom: 20px;
+        }
+      }
+    }
+
+    &.ms-show-agent{
+      #ms-body-walls{
+        top: -119px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .ms-header-walls {
+    padding-left: 40px;
+  }
+
+  .ms-profile-menu{
+    width: 1014px;
+    padding-left: 635px;
+    &:after{
+      left: 635px;
+    }
+
+    #ms-body-walls{
+      left: -635px;
+      width: 635px;
+      .ms-body-tab{
+        padding-left: 40px;
+      }
+
+      .ms-wrap-items{
+        .ms-item-wall{
+          .ms-wrap-item{
+            display: flex;
+            .ms-wrap-img{
+              width: 250px;
+              height: 160px;
+              margin-right: 18px;
+              &:after{
+                display: none;
+              }
+            }
+
+            .ms-property-detail{
+              .ms-label{
+                margin: 12px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
