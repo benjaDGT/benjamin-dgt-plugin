@@ -1502,4 +1502,197 @@ body.modal-property-active{
     opacity: 0; }
   100% {
     margin-top: 0;
-    opacity: 1; } }
+		opacity: 1; } }
+		
+
+#modal_covid{
+	text-align: center;
+	.modal_cm{
+		border-radius: 10px;
+		.form_content{
+			.gform_body{
+				.gform_fields{
+					.gfield{
+						.medium{
+							border-radius: 6px;
+							height: 45px;
+						}
+
+						&.date,
+						&.time{
+							width: 48%;
+						}
+					}
+				}
+			}
+
+			.gform_footer{
+				.gform_button{
+					border-radius: 6px;
+					background-color: #ff4445;
+					border: 0;
+					&:hover{
+						color: #FFF !important;
+						background-color: #ec3a3b;
+					}
+				}
+			}
+		}
+	}
+
+	.ms-modal-title{
+		font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+		display: block;
+		&:before{
+			content: "\e948";
+			font-family: 'idx-icons';
+			margin: 0 auto;
+			font-size: 77px;
+			text-align: center;
+			display: block;
+			font-weight: normal;
+			margin-top: -15px;
+			color: #ff4445;
+		}
+	}
+
+	@media screen and (min-width: 640px){
+		.modal_cm {
+			width: 370px;
+			.body_md{
+				padding: 0 40px;
+			}
+		}
+	}
+}
+
+.ms-wrap-btn-cv{
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	z-index: 2;
+	display: inline-flex;
+	flex-direction: column;
+
+	&.ms-mf{
+		.ms-cv-btn{
+			margin-top: 10px;
+		}
+	}
+
+	.ms-cv-btn{
+		padding: 7px;
+		padding-left: 75px;
+		padding-right: 40px;
+		font-size: 14px;
+		font-weight: 600;
+		color: #FFF;
+		background-color: #1e1e1e;
+		border-radius: 6px;
+		transition: all .3s;
+		position: relative;
+		text-align: left;
+		&:hover{
+			background-color:#636363;
+			&:after{
+				right: 5px;
+			}
+		}
+
+		span{
+			display: block;
+			font-weight: normal;
+			position: relative;
+			&.ms-status{
+				padding-left: 15px;
+				&:before{
+					content: "";
+					display: block;
+					width: 7px;
+					height: 7px;
+					border-radius: 100%;
+					position: absolute;
+					top: 6px;
+					left: 0;
+					background-color: #ddd;
+				}
+				&.on{
+					&:before{
+						background-color: #86c057;
+					}
+				}
+				&.off{
+					&:before{
+						background-color: #d84949;
+					}
+				}
+			}
+		}
+
+		&:before{
+			content: "\e948";
+			font-family: 'idx-icons';
+			font-size: 45px;
+			display: inline-block;
+			font-weight: normal;
+			position: absolute;
+			left: 15px;
+			top: 50%;
+			transform: translateY(-50%);
+			color: #FFF;
+		}
+
+		&:after{
+			content: "\e902";
+			font-family: 'idx-icons';
+			position: absolute;
+			transform: translateY(-50%) rotate(-90deg);
+			top: 50%;
+			font-size: 18px;
+			right: 8px;
+			font-weight: normal;
+			color: #ff4445;
+			transition: all .3s;
+		}
+
+		&.ms-ft-a{
+			background-color: #ff4445;
+			&:after{
+				color: #FFF;
+			}
+			&:hover{
+				background-color: #e42324;
+			}
+		}
+
+		&.ms-ft-b{
+			background-color: #FFF;
+			color: #333;
+			&:after, &:before{
+				color: #ff4445;
+			}
+			&:hover{
+				background-color: #eaeaea;
+			}
+		}
+	}
+}
+
+/*	
+<button class="ms-cv-btn">
+Request a Live Showing Tour
+<span class="ms-status on">We are online!</span>
+</button>
+
+<button class="ms-cv-btn ms-ft-b">
+Request a Live Showing Tour
+<span class="ms-status on">Get an online personalized tour</span>
+</button>
+
+<button class="ms-cv-btn ms-ft-c">
+Request a Live Showing Tour
+<span class="ms-status on">Get an online personalized tour</span>
+</button>
+}*/

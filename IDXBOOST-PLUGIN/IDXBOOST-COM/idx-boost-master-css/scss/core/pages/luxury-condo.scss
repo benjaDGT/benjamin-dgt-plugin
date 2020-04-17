@@ -276,6 +276,21 @@
       order: 0 !important;
     }
   }
+
+  #header-filters{
+    display: none !important;
+  }
+
+  .animated{
+    &.fixed-box{
+      &.search-page-ft{
+        top: 80px !important;
+        @media screen and (min-width: 1024px){
+          top: 90px !important;
+        }
+      }
+    }
+  }
 }
 
 /*----------------------------------------------------------------------------------*/
@@ -320,35 +335,11 @@
               &.year{
                 display: none;
               }
-
-              /*&.tg-building-links{
-                position: relative;
-                order: 6;
-                margin-top: 10px;
-                .view-map-detail{
-                  display: inline-block;
-                  color: #333;
-                  transition: all .3s;
-                  margin-right: 10px;
-                  font-family: $opensans;
-                  font-size: 11/16*1rem;
-                  font-weight: 600;
-                  text-transform: uppercase;
-                  cursor: pointer;
-                  &:hover{
-                    color: #0072AC;
-                  }
-                }
-              }*/
             }
           }
           >h2{
             display: none;
           }
-
-          /*.view-detail{
-            display: none !important;
-          }*/
         }
       }
 
@@ -369,12 +360,6 @@
 }
 
 #luxury-condo-page{
-
-  /*.content-filters,
-  #wrap-subfilters{
-    display: none;
-  }*/
-
   /*----------------------------------------------------------------------------------*/
   /* Vista Grid
   /*----------------------------------------------------------------------------------*/
@@ -430,13 +415,6 @@
         }
 
         @media screen and (min-width: 1200px){
-          /*width: 24.24% !important;
-          //width: 19.19% !important;
-          margin-right: 1% !important;
-          &:nth-child(4n){
-          //&:nth-child(5n){
-            margin-right: 0 !important;
-          }*/
           width: 20% !important;
           margin-bottom: 30px;
         }
@@ -1254,6 +1232,15 @@
   height: 100%;
 }
 
+#luxury-condo-page .view-grid #result-search .propertie .features .name, 
+#luxury-condo-page .view-grid .result-search .propertie .features .name{
+	background-color: transparent !important;
+	padding-bottom: 5px;
+	padding-top: 10px;
+	margin-top: 0;
+	color: #333;
+}
+
 .full-page-luxury{
   .flex-block-description .title-block{
     margin-top: 40px;
@@ -1268,15 +1255,6 @@
 #luxury-condo-page .view-grid #result-search .propertie .features .address, 
 #luxury-condo-page .view-grid .result-search .propertie .features .address{
 	border: 0 !important;
-}
-
-#luxury-condo-page .view-grid #result-search .propertie .features .name, 
-#luxury-condo-page .view-grid .result-search .propertie .features .name{
-	background-color: transparent !important;
-	padding-bottom: 5px;
-	padding-top: 10px;
-	margin-top: 0;
-	color: #333;
 }
 
 #luxury-condo-page{
@@ -1296,7 +1274,6 @@
     }
   }
 }
-
 
 /*----------------------------------------------------------------------------------*/
 /* PARA PASAR AL PLUGIN

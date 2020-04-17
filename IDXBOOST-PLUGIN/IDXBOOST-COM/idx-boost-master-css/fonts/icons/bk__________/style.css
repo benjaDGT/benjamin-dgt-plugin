@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'idx-icons';
-  src:  url('fonts/idx-icons.eot?l59srm');
-  src:  url('fonts/idx-icons.eot?l59srm#iefix') format('embedded-opentype'),
-    url('fonts/idx-icons.ttf?l59srm') format('truetype'),
-    url('fonts/idx-icons.woff?l59srm') format('woff'),
-    url('fonts/idx-icons.svg?l59srm#idx-icons') format('svg');
+  src:  url('fonts/idx-icons.eot?rivysu');
+  src:  url('fonts/idx-icons.eot?rivysu#iefix') format('embedded-opentype'),
+    url('fonts/idx-icons.ttf?rivysu') format('truetype'),
+    url('fonts/idx-icons.woff?rivysu') format('woff'),
+    url('fonts/idx-icons.svg?rivysu#idx-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,9 +25,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.idx-icon-covid:before {
-  content: "\e948";
-}
 .idx-icon-dragdrop:before {
   content: "\e947";
 }
@@ -265,6 +262,7 @@
 .idx-icon-comment-o:before {
   content: "\e93d";
 }
+
 
 @font-face {
   font-family: "idx-boost-icons";
