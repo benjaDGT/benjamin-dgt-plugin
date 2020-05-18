@@ -23,7 +23,7 @@
 		}
 
 		.content_md{
-			height: 100%;
+			height: auto;
 			padding-bottom: 0;
 			.heder_md,
 			.ms-header-md{
@@ -399,6 +399,10 @@
 			margin: 7px 0!important;
 			font-size: 16px!important;
 			display: block;
+			&.ms-xt{
+				font-size: 14px !important;
+				font-weight: 600;
+			}
 		}
 
 		#formReset{
@@ -863,4 +867,9 @@
   text-align: center;
   font-size: 13px !important;
   display: none;
+}
+
+#modal_login .modal_cm label.ms-xt{
+	font-size: 14px !important;
+	font-weight: 600 !important;
 }

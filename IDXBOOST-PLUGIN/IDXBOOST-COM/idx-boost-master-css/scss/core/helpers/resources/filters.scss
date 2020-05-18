@@ -894,6 +894,10 @@
 			.gwr{
 				.filters,
 				#filters{
+					height: 40px;
+					@media screen and (min-width: 768px){
+						height: auto;
+					}
 					li{
 						&.all{
 							width: 50%;

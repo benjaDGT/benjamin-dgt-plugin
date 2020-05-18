@@ -174,7 +174,7 @@
 				.#{$prefijo}wrap-slider{
 					position: relative;
 					width: 100%;
-					height: 100%;
+					height: auto;
 					>ul{
 						width: 100%;
 						/*height: 100%;*/
@@ -199,7 +199,7 @@
 						>li{
 							position: relative;
 							width: 100%;
-							height: 100%;
+							height: auto;
 							float: left;
 							
 							&:after{
@@ -259,8 +259,10 @@
 						background-color: rgba(0,0,0,0.7);
 						margin-top: -23px;
 						z-index: 5;
+						text-indent: 100%;
 						transition: all .3s;
 						opacity: 0;
+						overflow: hidden;
 						&:hover{
 							background-color: rgba(0,0,0,1);
 						}
@@ -271,6 +273,7 @@
 							top: 0;
 							left: 0;
 							text-align: center;
+							text-indent: 0;
 							line-height: 46px;
 							&:before{
 								content: "\e921";
@@ -432,6 +435,10 @@
 					height: 100%;
 					border: 1px solid $gris-lineas;
 					transition: border-color .3s;
+
+					&:focus {
+						border-color: $colorweb;
+					}
 				}
 			}
 		}
@@ -461,6 +468,7 @@
 					}
 				}
 			}
+
 		}
 	}
 }
@@ -469,6 +477,7 @@
 @media screen and (min-width: 768px){
 	.#{$prefijo}wrap-result,
 	##{$prefijo}wrap-result{
+
 		&.#{$prefijo}full-map,
 		&.#{$prefijo}view-grid{
 			.#{$prefijo}gwr{
@@ -504,6 +513,7 @@
 					}
 				}
 			}
+
 		}
 	}
 }

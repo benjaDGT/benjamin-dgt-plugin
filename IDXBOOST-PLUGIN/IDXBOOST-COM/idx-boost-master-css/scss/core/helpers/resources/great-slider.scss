@@ -7,6 +7,7 @@
 
 .#{$prefijo}gs-container-slider {
 	position: relative;
+	height: auto;
 
 	&.#{$prefijo}gs-infs {
 		width: 100% !important; 
@@ -180,6 +181,7 @@
 			overflow: hidden;
 			transition: margin .1s linear, opacity .2s linear;
 			position: relative;
+			text-indent: -999999px;
 
 			&:before {
 				content: "";
@@ -195,6 +197,7 @@
 				width: 16px;
 				height: 25px;
 				transition: all .1s linear;
+				text-indent: 0;
 			}
 
 			&:hover {
@@ -243,7 +246,7 @@
 		height: 20px;
 		background-color: #d2d2d2;
 		margin-right: 10px;
-		opactiy: .5;
+		opacity: .5;
 		transition: all .3s linear;
 
 		&:last-child {
@@ -257,7 +260,7 @@
 		}
 
 		&:active {
-			opacify: 1;
+			opacity: 1;
 		}
 
 		&.#{$prefijo}gs-bullet-active {

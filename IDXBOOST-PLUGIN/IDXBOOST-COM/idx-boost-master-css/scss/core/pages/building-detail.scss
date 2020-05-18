@@ -335,7 +335,8 @@
 						display: flex;
 						position: absolute;
 						right: 0;
-						top: 1rem;
+						top: 50%;
+						transform: translateY(-50%);
 						li{
 							&.#{$prefijo}btn-save{
 								display: flex;
@@ -471,4 +472,3 @@
 		}
 	}
 }
-

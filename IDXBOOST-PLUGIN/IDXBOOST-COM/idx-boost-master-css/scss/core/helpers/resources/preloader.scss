@@ -68,14 +68,15 @@
 		animation-fill-mode: both;
 		animation-name: fadeInUp;
 		animation-delay: 0.9s;
-		position: absolute;
-		top: 100%;
+		position: relative;
+		top: 0;
 		left: auto;
 		width: 60px;
 		height: 60px;
 		left: 0;
 		right: 0;
 		margin: 0 auto;
+		margin-top: 20px;
 		&:before{
 			content: "";
 			position: relative;

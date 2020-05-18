@@ -693,6 +693,7 @@ img{
 	}
 }
 .ib-url-brochure{
+	float: right;
 	display: inline-block;
 	text-decoration: none !important;
 	font-size: 14px;
@@ -3054,6 +3055,22 @@ ul.property-information{
 			}
 		}
 	}
+}
+
+#modal_login .modal_cm .ms-sub-text.small{
+	font-size: 14px !important;
+	font-weight: normal !important;
+	margin-top: 5px !important;
+}
+
+
+.mg-npa { 
+  display: flex !important;
+  align-items: stretch !important;
+}
+#code-map-neighboardhood {
+	width: 100% !important;
+	height: auto !important;
 }
 
 /*
