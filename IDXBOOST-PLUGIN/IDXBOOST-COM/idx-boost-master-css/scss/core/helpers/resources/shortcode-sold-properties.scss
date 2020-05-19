@@ -1,3 +1,13 @@
+#sold_properties_filter {
+  #wrap-subfilters {
+    .gwr {
+      @media screen and (min-width: 768px) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
 .filter {
   color: $colorweb;
   padding: .625rem .9375rem;
