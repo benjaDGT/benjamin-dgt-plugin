@@ -1679,3 +1679,54 @@ body.modal-property-active{
 		}
 	}
 }
+
+
+#modal_edit_alert_information{
+	.ms-header-close{
+		padding: 1rem;
+		p{
+			padding: 15px;
+			background-color: #e0e0e0;
+			text-align: center;
+			font-size: 14px;
+			a{
+				font-weight: 600;
+				text-decoration: underline;
+			}
+		}
+
+		.close-modal{
+			top: 20px;
+			right: 20px;
+			span{
+				color: #333
+			}
+		}
+	}
+
+	.content_md{
+		.heder_md{
+			padding: 0 1rem 1rem;
+			text-align: center;
+			.ms-modal-title{
+				font-size: 22px;
+				font-weight: 700;
+				text-transform: uppercase;
+				width: 100%;
+				display: block;
+				&:after{
+					content: "";
+					display: block;
+					height: 2px;
+					background-color: #333;
+					width: 50px;
+					margin: 7px auto;
+				}
+			}
+		}
+
+		.gform_footer{
+			margin-top: 15px;
+		}
+	}
+}

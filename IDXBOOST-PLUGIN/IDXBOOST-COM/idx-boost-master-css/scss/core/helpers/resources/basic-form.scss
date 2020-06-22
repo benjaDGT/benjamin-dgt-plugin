@@ -25,7 +25,13 @@
 				}
 
 				label{
-					display: none;
+					display: block !important;
+					height: 0;
+					width: 0;
+					overflow: hidden;
+					position: absolute;
+					top: 0;
+					left: 0
 				}
 
 				.#{$prefijo}medium{

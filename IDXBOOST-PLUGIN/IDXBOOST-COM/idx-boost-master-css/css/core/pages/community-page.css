@@ -1028,7 +1028,9 @@
       .community-page .ms-community-wrap-map .ms-map {
         min-height: 340px; } }
   .community-page .ms-community-info {
-    width: 100%; }
+    width: 100%;
+    position: relative;
+    z-index: 13; }
     @media screen and (min-width: 1024px) {
       .community-page .ms-community-info {
         display: -webkit-box;
@@ -1238,7 +1240,9 @@
   position: relative; }
   .ms-community-float-block .avt-title {
     font-weight: 600;
-    font-size: 16px; }
+    font-size: 18px; }
+  .ms-community-float-block .phone-avatar {
+    font-size: 14px !important; }
   .ms-community-float-block .ms-commuty-filters {
     background-color: #f3f3f3;
     -webkit-box-align: center;
@@ -1383,7 +1387,12 @@
   .ms-community-float-block .gform_footer {
     margin-bottom: 0; }
   .ms-community-float-block .avatar-content .content-avatar-image img {
-    max-width: 70px; }
+    width: 90px;
+    height: 90px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top; }
   @media (max-width: 1023px) {
     .ms-community-float-block.active {
       position: fixed;
@@ -1396,8 +1405,9 @@
         bottom: 0;
         opacity: 1; } }
   .ms-community-float-block .ms-wrap-boostbox {
-    margin: 10px 0;
-    border: 1px solid #E5E5E5; }
+    margin: 10px 0; }
+    .ms-community-float-block .ms-wrap-boostbox .ms-wrap-video {
+      border: 1px solid #E5E5E5; }
 
 .grecaptcha-badge {
   display: none !important; }
@@ -1673,5 +1683,5 @@
   .ms-full-screen:hover {
     background-color: #000; }
 
-.ms-community-wrap-media.video .ms-full-screen, .ms-community-wrap-media.mapa .ms-full-screen {
+.ms-community-wrap-media.video .ms-full-screen, .ms-community-wrap-media.map .ms-full-screen {
   display: none; }
