@@ -3063,23 +3063,106 @@ ul.property-information{
 	margin-top: 5px !important;
 }
 
-
 .mg-npa { 
   display: flex !important;
   align-items: stretch !important;
 }
+
 #code-map-neighboardhood {
 	width: 100% !important;
 	height: auto !important;
 }
 
-/*
-<div class="ms-wrap-iframe">
-	<!--https://www.facebook.com/fcbarcelona/videos/2515670138700041/-->
-	<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Felcomercio.pe%2Fvideos%2F2675510512553996%2F&width=500&show_text=false&height=281&appId" width="500" height="281" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
-	<div class="ms-chat-wrapper" id="ms-chat-wrapper">
-	</div>
-</div>*/
+.ib-clabel{
+	display: block;
+}
+
+.ib-infobox{
+	.ib-ibclose{
+		background-color: transparent;
+	}
+}
+
+.js-info-bubble-close{
+	opacity: 0;
+	-khtml-opacity: 0;
+	width: 23px;
+}
+
+.ib-fhpa-minisearch{
+	.ui-autocomplete {
+		max-height: 200px;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+}
+
+/*----------------------------------------------------------------------------------*/
+/* ACCESIBILIDAD HACK GENERAL
+/*----------------------------------------------------------------------------------*/
+$accesibility-border-color:  #3887fd;
+$accesibility-box-shadow-color: rgba($color: #3887fd, $alpha: 1);
+
+body:not(.using-mouse){
+	:focus {
+		border-color: $accesibility-border-color !important;
+		box-shadow: 0 0 0 3.2px $accesibility-box-shadow-color !important;
+		outline: 0 !important;
+	}
+}
+
+.ms-focus{
+  border: 3px solid transparent;
+  &:focus{
+    box-shadow: none !important;
+  }
+}
+
+.ms-focus-none{
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+.wrap-result,
+#wrap-result{
+  .result-search,
+  #result-search{
+    >li{
+      .wrap-slider{
+        .clidxboost-btn-check{
+          border-radius: 100%;
+        }
+        .next,
+        .prev{
+          display: none;
+        }
+      }
+    }
+  }
+} 
+
+.flex-block-description{
+  .ib-view-detailt{
+    border: 3px solid transparent;
+    &:focus{
+      box-shadow: none !important;
+    }
+  }
+}
+
+body.using-mouse{
+  :focus {
+    border-color: none !important;
+    box-shadow: none !important;
+    outline: 0 !important;
+  }
+}
+
+.avatar-content .avatar-information h2,
+.ib-cftname{
+  text-overflow: initial;
+  white-space: normal;
+}
 
 /*----------------------------------------------------------------------------------*/
 /* Estructuras generales
