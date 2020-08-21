@@ -48,15 +48,15 @@
 				line-height: 50px;
 				text-align: center;
 				margin: 0 auto 5px auto;
-				vertical-align: middle;
 				margin-bottom: 12px;
 				font-family: $opensans;
+				vertical-align: middle;
 				&.#{$prefijo}sale {
 					background: #0072ac;
 				}
 				&.#{$prefijo}rent {
 					color: #FFF;
-					background: #99999a;
+					background: #434343;
 				}
 			}
 		}

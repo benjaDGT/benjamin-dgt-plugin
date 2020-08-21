@@ -3164,6 +3164,17 @@ body.using-mouse{
   white-space: normal;
 }
 
+#flex-contact-theme .ms-hidden {
+	height: auto;
+	width: auto;
+	overflow: hidden;
+	position: relative;
+	top: auto;
+	left: 0;
+	color: #FFFF;
+	font-size: 14px;
+}
+
 /*----------------------------------------------------------------------------------*/
 /* Estructuras generales
 /*----------------------------------------------------------------------------------*/
