@@ -1,0 +1,96 @@
+#sp-amenities {
+	text-align: center;
+	max-width: 888px;
+
+	.sp-section-title {
+		font-size: 23px;
+		font-weight: 400;
+		margin-bottom: 20px;
+	}
+
+	.sp-amenities-list {
+		column-count: 2;
+		display: grid;
+		font-size: 14px;
+		font-weight: 300;
+		grid-template-columns: 1fr 1fr;
+		text-align: left;
+
+		&.columns-1 {
+			column-count: 1;
+			grid-template-columns: 1fr;
+		}
+
+		li {
+			margin-bottom: 5px;
+			padding-left: 25px;
+      position: relative;
+      
+			&:before{
+				content: "";
+				background: url('./../images/single-property/sorts.png') no-repeat;
+				background-position: -32px -1px;
+				background-size: 60px;
+				display: block;
+				height: 11px;
+				left: 0;
+				position: absolute;
+				top: 4px;
+				width: 15px;
+			}
+		}
+	}
+
+	@media screen and (min-width: 640px) {
+		.sp-amenities-list {
+			&.columns-2,
+			&.columns-3,
+			&.columns-4 {
+				column-count: 2;
+				grid-template-columns: 1fr 1fr;
+			}
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		padding-bottom: 60px;
+		
+		.sp-section-title {
+			font-size: 28px;
+		}
+
+		.sp-amenities-list {
+			column-count: 3;
+			font-size: 16px;
+			grid-template-columns: 1fr 1fr 1fr;
+			margin: 30px 0;
+
+			&.columns-3,
+			&.columns-4 {
+				column-count: 3;
+				grid-template-columns: 1fr 1fr 1fr;
+			}
+
+			li {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		.sp-section-title {
+			font-size: 33px;
+		}
+
+		.sp-amenities-list {
+			column-count: 4;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			margin: 40px 0;
+
+			&.columns-4 {
+				column-count: 4;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+			}
+		}
+	}
+}

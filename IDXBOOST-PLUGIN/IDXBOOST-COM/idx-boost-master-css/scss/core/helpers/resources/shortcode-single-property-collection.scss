@@ -8,19 +8,27 @@
     display: none;
   }
 
+  .ib-lproperties {
+    min-height: 450px;
+  }
+
   @media screen and (min-width: 640px) {
     .ib-pitem {
       margin-bottom: 10px;
     }
   
-    &.columns-one .ib-pitem {
+    &.columns-one .ib-pitem,
+    &.columns-one .ib-pitem:nth-child(2n) {
       margin-right: 0;
       width: 100%;
     }
-    &.columns-two .ib-pitem {
+
+    &.columns-two .ib-pitem,
+    &.columns-two .ib-pitem:nth-child(3n) {
       margin-right: 10px;
       width: calc(50% - 5px);
     }
+
     &.columns-two .ib-pitem:nth-child(2n) {
       margin-right: 0;
     }
@@ -92,4 +100,18 @@
       margin-right: 0;
     }
   }
+}
+
+#ib-sp-modals {
+  .ib-property-detail {
+    &.ib-pdmodal {
+      .ib-pcontent {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.ib-sp-modal-opened {
+  overflow: hidden;
 }

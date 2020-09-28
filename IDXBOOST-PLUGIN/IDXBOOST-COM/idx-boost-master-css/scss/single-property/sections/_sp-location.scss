@@ -1,0 +1,273 @@
+#sp-media,
+#sp-location {
+	max-width: 1055px;
+
+	.sp-section-title {
+		font-size: 23px;
+		font-weight: 400;
+		margin-bottom: 20px;
+		text-align: center;
+
+		@media screen and (min-width: 768px) {
+			font-size: 28px;
+		}
+	
+		@media screen and (min-width: 1024px) {
+			font-size: 33px;
+			margin-bottom: 30px;
+		}
+	}
+
+	#sp-virtual {
+		margin-bottom: 30px;
+		
+		.gs-container-items {
+			border: 1px solid #ccc;
+		}
+
+		.sp-item {
+			display: block;
+			padding: 15px;
+			width: 100%;
+
+			img {
+				position: relative;
+			}
+		}
+
+		.sp-wrap-img-header {
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			justify-content: center;
+			position: absolute;
+			text-align: center;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+			z-index: 2;
+    }
+    
+		@media (min-width: 1024px) {
+			margin-bottom: 30px;
+		}
+
+		.sp-slider-video {
+			position: relative;
+			width: 100%;
+
+			.gs-item-slider,
+			.gs-wrapper-content {
+				position: relative;
+				width: 100%;
+			}
+
+			.gs-wrapper-content {
+				padding: 15px;
+			}
+		
+			.gs-container-navs {
+				height: auto;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 100%;
+				z-index: 3;
+			}
+
+			.gs-wrapper-arrows {
+				padding: 0 25px;
+			}
+
+			.gs-prev-arrow,
+			.gs-next-arrow {
+				background-color: #fff;
+				border-radius: 100%;
+				box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.15);
+				color: #000;
+				height: 50px;
+				opacity: 1;
+				overflow: hidden;
+				position: relative;
+				text-indent: -999999px;
+				transition: all .3s;
+				width: 50px;
+	
+				&:before {
+					content: "";
+					background-image: url("../images/single-property/nav-arrows.png");
+					background-position: 0 0;
+					background-repeat: no-repeat;
+					background-size: 24px 19px;
+					display: block;
+					height: 19px;
+					left: 50%;
+					margin: initial;
+					margin-left: -6px;
+					margin-top: -9px;
+					position: absolute;
+					transform: none;
+					transition: none;
+					top: 50%;
+					width: 11px;
+				}
+	
+				&:hover {
+					background-color: #000;
+          color: #fff;
+          
+					&:before {
+						background-position: -13px 0;
+					}
+				}
+			}
+
+			.gs-next-arrow {
+				transform: rotate(-180deg);
+			}
+
+			.sp-play-video {
+				background-color: #fff;
+				border-radius: 100%;
+				height: 70px;
+				left: 50%;
+				margin-left: -35px;
+				margin-top: -35px;
+				position: absolute;
+				text-indent: -999999px;
+				top: 50%;
+				transition: all 0.3s;
+				width: 70px;
+				z-index: 2;
+
+				&.hide {
+					z-index: -1;
+				}
+
+				&::before {
+					content: "";
+					border-bottom: 10px solid transparent;
+					border-left: 16px solid #000;
+					border-top: 10px solid transparent;
+					display: block;
+					height: 0;
+					left: 50%;
+					margin-left: -6px;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 0;
+				}
+
+				&:hover {
+					background-color: #000;
+
+					&::before {
+						border-left: 16px solid #fff;
+					}
+				}
+
+				@media screen and (min-width: 768px) {
+					height: 90px;
+					width: 90px;
+
+					&::before {
+						border-bottom: 15px solid transparent;
+						border-left: 24px solid #000;
+						border-top: 15px solid transparent;
+						margin-left: -9px;
+					}
+
+					&:hover {
+						&::before {
+							border-left: 24px solid #fff;
+						}
+					}
+				}
+			}
+		
+			.sp-item {
+				padding: 0;
+				position: relative;
+				width: 100%;
+
+				&::after {
+					content: "";
+					display: block;
+					padding-bottom: 56.25%;
+				}
+		
+				img {
+					height: 100%;
+					left: 0;
+					object-fit: cover;
+					position: absolute;
+					top: 0;
+					width: 100%;
+					z-index: 1;
+				}
+		
+				iframe, 
+				video {
+					border: 0;
+					bottom: 0;
+					height: 100%;
+					left: 0;
+					position: absolute;
+					top: 0;
+					width: 100%;
+					z-index: 1;
+				}
+      }
+      
+		}
+	}
+}
+
+#sp-location {
+  text-align: center;
+  
+	.sp-map {
+		background-color: #333;
+		min-height: 280px;
+		position: relative;
+		width: 100%;
+		
+		.sp-map-img {
+			height: 100%;
+			left: 0;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		padding-bottom: 70px;
+    padding-top: 50px;
+
+    .sp-section-title {
+			font-size: 25px;
+		}
+    
+		.sp-map {
+			height: 380px;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+    padding-bottom: 100px;
+
+    .sp-section-title {
+			font-size: 28px;
+			margin-bottom: 30px;
+		}
+    
+		.sp-map {
+			height: 480px;
+    }
+  }
+
+}
