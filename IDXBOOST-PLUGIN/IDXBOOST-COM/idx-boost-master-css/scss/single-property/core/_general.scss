@@ -69,6 +69,19 @@ fieldset {
 
 // Request Showing
 
+#ib-sp-modal-website {
+
+	@media screen and (min-width: 768px) {
+		.ib-property-detail.ib-pdmodal {
+			max-width: calc(100vw - 150px);
+
+			.ib-pcheader {
+				max-width: calc(100vw - 150px);
+			}
+		}	
+	}
+}
+
 #ib-sp-modal-contact {
 	.ib-mgeneric {
 		background-color: #fff;
