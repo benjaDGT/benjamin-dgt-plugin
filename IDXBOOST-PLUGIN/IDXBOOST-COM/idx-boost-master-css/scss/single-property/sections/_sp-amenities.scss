@@ -1,6 +1,6 @@
 #sp-amenities {
 	text-align: center;
-	max-width: 888px;
+	max-width: 960px;
 
 	.sp-section-title {
 		font-size: 23px;
@@ -13,6 +13,7 @@
 		display: grid;
 		font-size: 14px;
 		font-weight: 300;
+		grid-column-gap: 20px;
 		grid-template-columns: 1fr 1fr;
 		text-align: left;
 
@@ -22,6 +23,7 @@
 		}
 
 		li {
+			line-height: 1.4;
 			margin-bottom: 5px;
 			padding-left: 25px;
       position: relative;
