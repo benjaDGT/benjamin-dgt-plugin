@@ -6,15 +6,26 @@
 	.sp-footer-img {
 		align-items: center;
 		display: flex;
-		justify-content: space-between;
-		margin-bottom: 20px;
+		justify-content: center;
 		margin: 0 auto;
+		margin-bottom: 20px;
 		max-width: 1055px;
 		width: 90%;
 
+		&-alt {
+      justify-content: space-between;
+    }
+
 		img {
+      display: block;
 			max-height: 50px;
+      max-width: 50%;
+      width: auto;
 		}
+
+    @media screen and (min-width: 1024px) {
+      justify-content: space-between;
+    }
 	}
 
 	p {

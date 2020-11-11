@@ -48,6 +48,97 @@
     line-height: 1.6;
 	}
 
+	// Styles for rich editor elements
+	.sps-h2,
+	.sps-h3,
+	.sps-h4,
+	.sps-h5 {
+		font-weight: 400;
+		margin-top: 10px;
+    margin-bottom: 20px;
+	}
+
+	.sps-h2 {
+		font-size: 23px;
+	}
+
+	.sps-h3 {
+		font-size: 21px;
+	}
+
+	.sps-h4 {
+		font-size: 19px;
+	}
+
+	.sps-h5 {
+		font-size: 17px;
+	}
+
+	.sps-paragraph,
+	.sps-olist,
+	.sps-ulist {
+		b {
+			font-weight: 600;
+		}
+
+		i {
+			font-style: italic;
+		}
+
+		a {
+			color: #157edc;
+			cursor: pointer;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.sps-paragraph  {
+		margin-top: 15px;
+	}
+
+	.sps-olist,
+	.sps-ulist {
+		font-size: 14px;
+    display: table;
+    line-height: 1.6;
+    margin: 10px auto 15px;
+		
+		li {
+			text-align: left;
+		}
+	}
+
+	// Ordered list
+	.sps-olist {
+		padding-left: 25px;
+
+		li {
+			list-style: decimal;
+		}
+	}
+
+	// Unordered list
+	.sps-ulist li {
+		padding-left: 25px;
+		position: relative;
+
+		&:before {
+			content: "";
+			display: block;
+			background: url('./../images/single-property/sorts.png') no-repeat;
+			background-position: -32px -1px;
+			background-size: 60px;
+			width: 15px;
+			height: 11px;
+			position: absolute;
+			top: 8px;
+			left: 0;
+		}
+	}
+
 	@media screen and (min-width: 640px) {
 		.sp-section-title {
       font-size: 28px;
@@ -87,11 +178,60 @@
 			font-size: 16px;
 			line-height: 1.9;
 		}
+
+		.sps-h2 {
+			font-size: 28px;
+		}
+
+		.sps-h3 {
+			font-size: 26px;
+		}
+
+		.sps-h4 {
+			font-size: 24px;
+		}
+
+		.sps-h5 {
+			font-size: 22px;
+		}
+
+		.sps-list{
+			margin: 40px 0 30px 0;
+			li{
+				font-size: 32px;
+				&:first-child {
+					width: auto;
+				}
+			}
+		}
+
+		p,
+		.sps-olist,
+		.sps-ulist {
+			font-size: 16px;
+			line-height: 1.9;
+		}
 	}
 
 	@media screen and (min-width: 1024px) {
 		.sp-section-title {
 			font-size: 36px;
+		}
+
+		.sps-h2 {
+			font-size: 33px;
+		}
+
+		.sps-h3 {
+			font-size: 31px;
+		}
+
+		.sps-h4 {
+			font-size: 29px;
+		}
+
+		.sps-h5 {
+			font-size: 27px;
 		}
 
 		.sp-list {
