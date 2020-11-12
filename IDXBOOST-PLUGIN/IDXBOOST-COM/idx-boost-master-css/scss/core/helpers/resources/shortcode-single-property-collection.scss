@@ -102,6 +102,70 @@
 #ib-sp-modals {
   .ib-property-detail {
     &.ib-pdmodal {
+      .ib-pbtnopen {
+        display: flex;
+      }
+
+      .ib-pwheader.sps-header-dark {
+        background-color: #000;
+
+        .ib-phbtn {
+          color: #fff;
+          background-color: #000;
+          border-bottom-color: #000;
+
+          &::before {
+            color: #fff;
+          }
+        }
+
+        .ib-phbtn.ib-requestinfo, 
+        .ib-phbtn:hover {
+          color: #000;
+          background-color: #fff;
+          border-bottom-color: #fff;
+        }
+
+        .ib-phbtn.ib-requestinfo:before, 
+        .ib-phbtn:hover:before {
+          color: #000;
+        }
+
+        @media screen and (max-width: 767px) {
+          .ib-phbtn {
+            color: #000;
+            background-color: #fff;
+            border-bottom-color: #fff;
+
+            &::before {
+              color: #000;
+            }
+          }
+
+          .ib-pbtnphone {
+            color: #fff;
+            background-color: #000 !important;
+            &::before {
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      .ib-pheader .ib-logo{
+        align-items: center;
+        display: flex;
+        height: 41px;
+        justify-content: flex-start;
+
+        img {
+          max-height: 36px;
+          height: auto;
+          max-width: 100%;
+          width: auto;
+        }
+      }
+      
       .ib-pcontent {
         padding-bottom: 0;
       }
